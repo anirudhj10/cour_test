@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+
+
+
+/*.col1,.col2,.col3 {
+  float: left;
+  width: 50%;
+  padding: 11px;
+  height: 200px;  Should be removed. Only for demonstration 
+  border: solid black 3px;
+  margin-left: 0px;
+  
+}*/
+
+/* Clear floats after the columns */
+.color{
+  background-color: darkgrey;
+  border: solid black 3px;
+}
+
+
+.row:after {
+  content: "";
+  clear: both;
+  width: 80%;
+}
+#h21 {
+  background-color: red;
+  color: white;
+  float: right;
+  border: solid black 2px ;
+  border-right: 0;
+  border-top: 0;
+  text-align: center;
+  padding:2%;
+  height: 10%;
+  width: 20%;
+
+}
+
+
+p{
+  padding: 5px;
+  margin-right: auto;
+  margin-left:auto;
+}
+@media (min-width: 996px)
+{
+  .col1{
+    width:30%;
+    margin-left: 2%;
+    float: left;
+
+  }
+  .col2{
+    width:30%;
+    margin-left: 1%;
+    float: left;
+
+  }
+  .col3{
+    width:30%;
+    margin-left: 1%;
+    float: left;
+
+  }
+}
+@media (min-width: 768px) and (max-width: 995px)
+{
+  .col1{
+    width: 48%;
+    float: left;
+
+  }
+  .col2{
+    width: 48%;
+    float: left;
+    margin-left: 3%;
+
+  }
+  .col3{
+    width: 48%;
+    float: left;
+    margin-top: 10px;
+
+  }
+}
+@media (max-width: 767px)
+{
+  .col1,.col2,.col3{
+    width:100%;
+    float: left;
+    margin-left:3%;
+  }
+}
